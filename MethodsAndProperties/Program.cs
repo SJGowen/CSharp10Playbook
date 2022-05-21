@@ -36,3 +36,6 @@ Console.WriteLine($"{name} spent {totalValue:c} in {numberOfSales} purchases");
 var highest = sales.GetHighestValueCustomer();
 Console.WriteLine("\r\nHighest Spender");
 Console.WriteLine($"{highest.CustomerName} spent {highest.TotalSpent:c} in {highest.NumberOfSales} purchases");
+
+bool eligible = BusinessRules.EligableForVoucher(numberOfSales, in totalValue);
+Console.WriteLine($"{name} is {(eligible ? "" : "not")} eligible for a voucher!");
