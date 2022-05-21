@@ -24,6 +24,15 @@ sales.AddSale(new(simon, 200M))
 var highValueSales = sales.EnumerateItems()
     .Where(sale => sale.Value > 100)
     .OrderBy(sale => sale.Customer.Name);
-
+Console.WriteLine($"\r\nCustomers who spent over {100:c}");
 foreach (var sale in highValueSales)
     Console.WriteLine($"{sale.Customer.Name} purchased {sale.Value:c} worth of Cookies");
+
+// This is tuple deconstruction (it deconstructs the tuple into its separate parts)
+(string name, decimal totalValue, int numberOfSales) = sales.GetHighestValueCustomer();
+Console.WriteLine("\r\nHighest Spender");
+Console.WriteLine($"{name} spent {totalValue:c} in {numberOfSales} purchases");
+
+var highest = sales.GetHighestValueCustomer();
+Console.WriteLine("\r\nHighest Spender");
+Console.WriteLine($"{highest.CustomerName} spent {highest.TotalSpent:c} in {highest.NumberOfSales} purchases");
