@@ -39,3 +39,11 @@ Console.WriteLine($"{highest.CustomerName} spent {highest.TotalSpent:c} in {high
 
 bool eligible = BusinessRules.EligableForVoucher(numberOfSales, in totalValue);
 Console.WriteLine($"{name} is {(eligible ? "" : "not")} eligible for a voucher!");
+
+// Demonstrates the sizes of IntPtr, int and decimal
+// So that you can determine if using 'in', 'ref' or 'out' save you anything
+// by reducing the amount of memory that has to be copied when used before params
+Console.WriteLine($"\r\nIntPtr.Size = {IntPtr.Size}");
+Console.WriteLine($"sizeof(int) = {sizeof(int)}");
+Console.WriteLine($"sizeof(decimal) = {sizeof(decimal)}");
+// so you can see it barely saves anything but might be useful in a speed sensitive application

@@ -10,3 +10,17 @@ Returning multiple values
 
 Performance:
  * Passing value types by reference
+
+
+Passing by Reference
+ * Declare as in:
+   * Do this if by reference is just for Performance
+   void DoSomething(in MyValueType data) { }
+
+ * Declare as ref:
+   * Do this if you want to modify the value in the caller
+   void DoSomething(ref MyValueType data) { }
+
+ * Declare as out:
+   * Do this to use the value as a return value
+   void DoSomething(out MyValueType data) { }
