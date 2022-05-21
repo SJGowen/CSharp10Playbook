@@ -1,0 +1,12 @@
+﻿
+Protect against bugs:
+ * Guard clauses
+
+Simpler Code:
+ * Writing fluent methods
+ * Choosing property types (auto-implemented, expression-bodied etc)
+
+Returning multiple values
+
+Performance:
+ * Passing value types by reference

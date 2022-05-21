@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlFlowAndLoops", "ControlFlowAndLoops\ControlFlowAndLoops.csproj", "{1DE8A606-8AEA-453C-A47C-A4B3C382B183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsAndProperties", "MethodsAndProperties\MethodsAndProperties.csproj", "{1AAF514E-37CB-48F1-8BD4-BD64C4A23EAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DE8A606-8AEA-453C-A47C-A4B3C382B183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE8A606-8AEA-453C-A47C-A4B3C382B183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE8A606-8AEA-453C-A47C-A4B3C382B183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE8A606-8AEA-453C-A47C-A4B3C382B183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AAF514E-37CB-48F1-8BD4-BD64C4A23EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AAF514E-37CB-48F1-8BD4-BD64C4A23EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AAF514E-37CB-48F1-8BD4-BD64C4A23EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AAF514E-37CB-48F1-8BD4-BD64C4A23EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9D8770D-D7E5-486E-A248-8CDBD4B91D25}
+	EndGlobalSection
+EndGlobal
