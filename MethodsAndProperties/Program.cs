@@ -38,7 +38,7 @@ Console.WriteLine("\r\nHighest Spender");
 Console.WriteLine($"{highest.CustomerName} spent {highest.TotalSpent:c} in {highest.NumberOfSales} purchases");
 
 bool eligible = BusinessRules.EligableForVoucher(numberOfSales, in totalValue);
-Console.WriteLine($"{name} is {(eligible ? "" : "not")} eligible for a voucher!");
+Console.WriteLine($"{name} is {(eligible ? "\b" : "not")} eligible for a voucher!");
 
 // Demonstrates the sizes of IntPtr, int and decimal
 // So that you can determine if using 'in', 'ref' or 'out' save you anything
